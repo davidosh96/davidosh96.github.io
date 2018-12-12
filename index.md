@@ -3,7 +3,7 @@ title: Programming for Geographical Inforamtion Analysts - Project Homepage
 ---
 
 ## Hello World 
-Welcome to my project homepage for my first assessment of the Programming for Geographical Analysts - Core Skills module.
+Welcome to my project homepage for the first assessment in the Programming for Geographical Analysts - Core Skills module.
 
 ### Bio
 
