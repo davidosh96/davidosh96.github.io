@@ -8,7 +8,7 @@ Welcome to my project homepage for my first assessment of the Programming for Ge
 ### Bio
 
 
-### The project
+### The Project
 
 
 
