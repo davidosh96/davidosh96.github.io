@@ -14,7 +14,7 @@ To view the licence for this code, [click here]()
 Alternatively, view an [editable preview](https://davidosh96.github.io/modelpreview.html) of the model before downloading.
 
 
-Alternatively, click the link below to view the step by step progress of my model as it developed each week:
+Visit the repository containing the step by step progress of my model as it developed each week:
 [Model development history](https://github.com/davidosh96/Assessment_1)
 
 
