@@ -21,7 +21,7 @@ Alternatively, view an [**editable preview**](https://davidosh96.github.io/model
 
 
 Finally, you can view the step by step progress of my model as it developed each week by visiting my
-[**Model development history**](https://github.com/davidosh96/Assessment_1) repo.
+[**Model development history**](https://github.com/davidosh96/Assessment_1_Development) repo.
 
 
 [Return to the homepage](https://davidosh96.github.io/index.html)
