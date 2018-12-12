@@ -13,7 +13,6 @@ The repo contains four text files:
 * README.txt - contains an explanation of the source code and instructions for running the program 
 
 
-To view the licence for this code, [**click here**]()
 
 
 
