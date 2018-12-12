@@ -11,7 +11,7 @@ The Agents module required for this model to run can be found [here.](https://gi
 To view the licence for this code, [click here]()
 
 
-[Model Preview](https://github.com)
+View a [preview of the model](https://davidosh96.github.io/modelpreview.html) before downloading.
 
 
 Alternatively, click the link below to view the step by step progress of my model as it developed each week:
