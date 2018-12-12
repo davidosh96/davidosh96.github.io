@@ -1,3 +1,5 @@
+[Return to the homepage](https://davidosh96.github.io/index.html)
+
 <figure>
   <figcaption>Model preview:</figcaption>
   <pre>
@@ -119,3 +121,6 @@ print ("End")
     </code>
   </pre>
 </figure>
+
+
+[Return to the homepage](https://davidosh96.github.io/index.html)
