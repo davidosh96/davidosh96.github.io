@@ -20,6 +20,8 @@ The repo contains four text files:
 Alternatively, view an [**editable preview**](https://davidosh96.github.io/modelpreview.html) of the code before downloading the finished version.
 
 
+[**Click here**](https://github.com/davidosh96/davidosh96.github.io) to view the repo for this website.
+
 Finally, you can view the step by step progress of my model as it developed each week by visiting my
 [**Model development history**](https://github.com/davidosh96/Assessment_1_Development) repo.
 
