@@ -1,5 +1,5 @@
 <figure>
-  <figcaption>Your code title</figcaption>
+  <figcaption>Model preview:</figcaption>
   <pre>
     <code contenteditable spellcheck="false">
 import random
