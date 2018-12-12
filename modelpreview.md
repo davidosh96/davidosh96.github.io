@@ -2,7 +2,7 @@
   <figcaption>Your code title</figcaption>
   <pre>
     <code contenteditable spellcheck="false">
-      import random
+import random
 import operator
 import matplotlib.pyplot
 import matplotlib.animation
