@@ -1,3 +1,6 @@
+---
+title: Assessment 1 - Model preview
+---
 [Return to the homepage](https://davidosh96.github.io/index.html)
 
 <figure>
