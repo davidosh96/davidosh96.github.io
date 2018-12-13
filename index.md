@@ -1,5 +1,5 @@
 ---
-title: Programming for Geographic Inforamtion Analysts - Project Homepage
+title: Programming for Geographic Information Analysts - Project Homepage
 ---
 
 ## Hello World... 
