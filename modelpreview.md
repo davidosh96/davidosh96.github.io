@@ -18,8 +18,8 @@ The code used to display/embed model on this page was adapted from code found [h
   <figcaption>Your code title</figcaption>
   <pre>
     <code contenteditable spellcheck="false">
-      <import random
-
+      
+import random
 class Agent():
     def __init__ (self, environment, neighbourhood, agents):
 #defining the agents and environment:        
