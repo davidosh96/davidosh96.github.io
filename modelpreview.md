@@ -6,7 +6,7 @@ title: Assessment 1 - Model preview
 The code used to display/embed model on this page was adapted from code found [here](https://websemantics.uk/articles/displaying-code-in-web-pages/).
 
 <figure>
-  <figcaption>Your code title</figcaption>
+  <figcaption>Model preview:</figcaption>
   <pre>
     <code contenteditable spellcheck="false">
 #import modules to be used in the program
@@ -159,7 +159,7 @@ class Agent():
                     print("sharing " + str(dist) + " " + str(ave))
 
     def distance_between(self, agent):
-            return (((self._x - agent._x)**2) + ((self._y - agent._y)**2))**0.5>
+            return (((self._x - agent._x)**2) + ((self._y - agent._y)**2))**0.5
     </code>
   </pre>
 </figure>
