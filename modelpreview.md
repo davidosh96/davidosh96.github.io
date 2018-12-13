@@ -9,83 +9,68 @@ The code used to display/embed model on this page was adapted from code found [h
   <figcaption>Model preview: figcaption>
   <pre>
     <code contenteditable spellcheck="false">
-import random
-import operator
-import matplotlib.pyplot
-import matplotlib.animation
-import agentframework5 as abm
+#import modules to be used in the program
+import random #import random is used to generate random integers/values to specify locations for the agents
+import matplotlib.pyplot #import pyplot from the matplotlib library, used to plot graphs/agent locations
+import matplotlib.animation #imported in order to plot the agents and envrinoment as an animation
+import agentframework #import agents module from the file "agentframework.py"
+import csv #imported in order to read in the csv file
+import time #in order to time how long it takes for the code to be processed/read
 
 
-def distance_between(agents_row_a, agents_row_b):
-    return (((agents_row_a[0] - agents_row_b[0])**2) + 
-        ((agents_row_a[1] - agents_row_b[1])**2))**0.5
-          
-import csv
+start=time.process_time() #starts the timer
+
+
+#create environment list to put rowlist in:
 environment = []
 
-#reading in some csv data (DEM points):
-f = open('in.txt', newline='') 
+
+
+#Reading in the csv DEM raster data from text file and appending it to the environment list:
+f = open('in.txt', newline='')
 reader = csv.reader(f, quoting=csv.QUOTE_NONNUMERIC)
-for row in reader:				# A list of rows
-    rowlist = []
-    for value in row:				# A list of value
-        rowlist.append(value)
-        #print(value) 				# Floats
-    environment.append(rowlist)
-f.close() 	# Don't close until you are done with the reader;
-		# the data is read on request.
+for row in reader:
+    rowlist = []         #create a list for each row
+    for value in row:
+        rowlist.append(value)  #appends each row of values into a list for each row
+        #print(value)      #prints the data as raw values in the console
+    environment.append(rowlist)    #appends the rowlist to the environment list:    
+f.close()
 
 
+
+#using matplotlib to show the data has been read in correctly:
 #matplotlib.pyplot.imshow(environment)
 #matplotlib.pyplot.show()
 
 
-#random_seed = 50
-neighbourhood = 20
-num_of_agents = 10
+    
+neighbourhood = 50
+#controlling how many agents there are:
+num_of_agents = 50
+#specifies the number of times the agents are to be moved. 
+    #This is different from the number of frames in the animated plot:
 num_of_iterations = 100
+#create list "agents" to append the agents to:
 agents = []
 
-#make the graph
-fig = matplotlib.pyplot.figure(figsize=(7, 7))
+
+
+#specifies the size of the figure and axes:
+fig = matplotlib.pyplot.figure(figsize=(12, 12))
 ax = fig.add_axes([0, 0, 1, 1])
 
-'''
-# Make the agents.
+
+
+#takes agents created in "agentframework" module
+#puts them in list "agents"
 for i in range(num_of_agents):
-    random_seed += 1
-    agents.append(abm.Agent(random_seed, environment, neighbourhood, agents))
-    #agents.append([random.randint(0,99),random.randint(0,99)])
-    print(agents[i])
+    agents.append(agentframework.Agent(environment, neighbourhood, agents))
 
 
-#call eat for each agent
-for j in range(num_of_iterations):
-    random.shuffle(agents)
-    for i in range(num_of_agents):
-        agents[i].move()
-        agents[i].eat()
-        agents[i].share_with_neighbours(neighbourhood)
-'''
-
-#display environment data
-#matplotlib.pyplot.xlim(0, 99)
-#matplotlib.pyplot.ylim(0, 99)
-#matplotlib.pyplot.imshow(environment)
-#for i in range(num_of_agents):
-#    matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
-#matplotlib.pyplot.show()
-
-
-for i in range(num_of_agents):
-    # Make the agents.
-        agents.append(abm.Agent(environment, neighbourhood, agents))
-        #agents.append([random.randint(0,99),random.randint(0,99)])
-        #print(agents[i])
-
-
+#animating the movement of agents:
+#carry_on is a Boolean value, i.e it is either True or False
 carry_on = True	
-
             
 def update(frame_number):
     fig.clear()
@@ -97,32 +82,58 @@ def update(frame_number):
         agents[i].move()
         agents[i].eat()
         #agents[i].share_with_neighbours(neighbourhood)
+    
+    #specifying the x and y limits for the graph:
     matplotlib.pyplot.xlim(0, 300)
     matplotlib.pyplot.ylim(300, 0)
+    #plotting the environment (from the csv file) on the graph:
     matplotlib.pyplot.imshow(environment)
-   
-    
-    if random.random() < 0.01:
-        carry_on = False
-        print("Stopping condition met - explain what this is/why")
-   
+    #plots the agent locations on the graph:
     for i in range(num_of_agents):
         matplotlib.pyplot.scatter(agents[i]._x,agents[i]._y)
+    #print values of the agents to the console:
     #print(agents[i]._x, agents[i]._y)
+    
+    
+#setting the stopping conditions for the animation:   
+  
+#This stopping condition which will stop the animation if any agent
+    #is generated a random.random value of less than 0.01 in the agent framework.
+    #random.random generates values between 0 and 1.    
+    if random.random() < 0.01:
+        carry_on = False
+        print("Stopping condition met: the sheep weren't very hungry.")
 
-
+#If the random.random stopping condition is not met, the animation will continue
+    #until the specified number of frames is reached, at which point carry_on will become False.
+#The number of frames for the animation depends on the maximum value specified for
+    # "a" in "gen_function" below, in this case 50. "a" gains a value of +1 for every frame displayed,
+    #until it reaches 50.
 def gen_function(b = [0]):
     a = 0
-    global carry_on #Not actually needed as we're not assigning, but clearer
+    global carry_on 
     while (a < 50) & (carry_on) :
-        yield a			# Returns control and waits next call.
+        yield a			
         a = a + 1
+        
+        #Prints to the console when the animation begins:
+        if a == 1:
+            print("The sheep start eating...")
+        #Prints to the console if full model animation is completed.
+            #change this value to match the value for "a" in "gen_function" above.
+        if a == 50:
+            print("The sheep are full.")
 
-
-#animation = matplotlib.animation.FuncAnimation(fig, update, interval=1, repeat=False, frames=num_of_iterations)
+            
+#calls and displays the animation
+#if repeat=True, the animation will continue unless the alternate stopping condition is met
 animation = matplotlib.animation.FuncAnimation(fig, update, frames=gen_function, repeat=False)
 matplotlib.pyplot.show()
-print ("End")
+
+
+#stops the timer after all the code has been read, prints time to the console:
+end=time.process_time()
+print("processing time = "+str(end-start))
     </code>
   </pre>
 </figure>
@@ -133,11 +144,14 @@ print ("End")
   <pre>
     <code contenteditable spellcheck="false">
 import random
+#The class for the agents/sheep:
 class Agent():
     def __init__ (self, environment, neighbourhood, agents):
+#defining the agents and environment:        
         self.environment = environment
         self.store = 0
-        #making the labels "self._x" and "self._y", assigning them the value "random.randint(0,99)":
+        #making the labels "self._x" and "self._y", assigning them the value "random.randint(0,299)":
+        #this makes the agent coordinates a random integer between and including 0 and 299:
         self._x = random.randint(0, 299)
         self._y = random.randint(0, 299)
         self.neighbourhood = neighbourhood
@@ -153,7 +167,9 @@ class Agent():
             self.environment[self._y][self._x] -= 10
             self.store += 10
 
-
+#moves the agents +/-1 space depending on the value of random.random().
+#The "% 300" creates a torus environment, creating a boundary to prevent agents leaving the space.
+#If an agent leaves the space on one edge of the graph it will re-enter on the opposite edge. 
     def move(self): 
         if random.random() < 0.5:
             self._y = (self._y + 1) % 300
@@ -165,7 +181,7 @@ class Agent():
         else:
             self._x = (self._x - 1) % 300
 
-
+#conditions for sharing with neighbours (although this is not used in this version of the program)
     def share_with_neighbours(self, neighbourhood):
             for agent in self.agents:
                 dist = self.distance_between(agent) 
@@ -176,7 +192,7 @@ class Agent():
                     agent.store = ave
                     print("sharing " + str(dist) + " " + str(ave))
 
-
+#phythagoras func for calculating distance between 2 agents (also not used in this version):
     def distance_between(self, agent):
             return (((self._x - agent._x)**2) + ((self._y - agent._y)**2))**0.5
     </code>
