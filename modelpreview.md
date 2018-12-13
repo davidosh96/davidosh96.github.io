@@ -3,6 +3,8 @@ title: Assessment 1 - Model preview
 ---
 [Return to the homepage](https://davidosh96.github.io/index.html)
 
+The code used to display/embed model on this page was adapted from code found [here](https://websemantics.uk/articles/displaying-code-in-web-pages/).
+
 <figure>
   <figcaption>Model preview:</figcaption>
   <pre>
