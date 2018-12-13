@@ -2,7 +2,7 @@
 title: Assessment 1 - Project Links
 ---
 
-### The Project
+## The Project
 On this page you will find the work I have completed as part of Assessment 1 of the Programming for Geographic Information Analysts module. 
 
 [**Click here**](https://github.com/davidosh96/Assessment_1) to view the GitHub repository for my finished model to be assessed and its associated documents.
