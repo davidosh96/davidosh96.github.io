@@ -126,4 +126,59 @@ print ("End")
 </figure>
 
 
+<figure>
+  <figcaption>Agents module:</figcaption>
+  <pre>
+    <code contenteditable spellcheck="false">
+import random
+class Agent():
+    def __init__ (self, environment, neighbourhood, agents):
+        self.environment = environment
+        self.store = 0
+        #making the labels "self._x" and "self._y", assigning them the value "random.randint(0,99)":
+        self._x = random.randint(0, 299)
+        self._y = random.randint(0, 299)
+        self.neighbourhood = neighbourhood
+        self.agents = agents
+
+
+    def __str__(self):
+        return " x " + str(self._x) + " y " + str(self._y)
+
+       
+    def eat(self):
+        if self.environment[self._y][self._x] > 10:
+            self.environment[self._y][self._x] -= 10
+            self.store += 10
+
+
+    def move(self): 
+        if random.random() < 0.5:
+            self._y = (self._y + 1) % 300
+        else:
+            self._y = (self._y - 1) % 300
+            
+        if random.random() < 0.5:
+            self._x = (self._x + 1) % 300
+        else:
+            self._x = (self._x - 1) % 300
+
+
+    def share_with_neighbours(self, neighbourhood):
+            for agent in self.agents:
+                dist = self.distance_between(agent) 
+                if dist <= neighbourhood:
+                    sum = self.store + agent.store
+                    ave = sum /2
+                    self.store = ave
+                    agent.store = ave
+                    print("sharing " + str(dist) + " " + str(ave))
+
+
+    def distance_between(self, agent):
+            return (((self._x - agent._x)**2) + ((self._y - agent._y)**2))**0.5
+    </code>
+  </pre>
+</figure>
+
 [Return to the homepage](https://davidosh96.github.io/index.html)
