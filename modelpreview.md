@@ -7,7 +7,7 @@ title: Assessment 1 - Model preview
 The code used to display/embed the model on this page was adapted from code found [here](https://websemantics.uk/articles/displaying-code-in-web-pages/).
 
 <figure>
-  <figcaption>Model preview (without full comments):</figcaption>
+  <figcaption>The model:</figcaption>
   <pre>
     <code contenteditable spellcheck="false">
 #import modules to be used in the program
@@ -112,7 +112,7 @@ print("processing time = "+str(end-start))
 </figure>
 
 <figure>
-  <figcaption>Agent framework preview (without full comments):</figcaption>
+  <figcaption>Agent framework:</figcaption>
   <pre>
    <code contenteditable spellcheck="false">
 import random
