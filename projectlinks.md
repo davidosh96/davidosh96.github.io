@@ -9,7 +9,7 @@ On this page you will find the work I have completed as part of Assessment 1 of 
 The repo contains four files:
 * Model.py - The program itself
 * Agentframework.py - module containing an Agent class, to be used with the model
-* README.txt - contains an explanation of the program source code and instructions for running the program
+* README.txt - contains an explanation of the program source code and instructions for running it
 * Licence.txt - A licence for the software source code
 
 
