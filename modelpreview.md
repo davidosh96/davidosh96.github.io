@@ -3,8 +3,8 @@ title: Assessment 1 - Model preview
 ---
 [Return to the homepage](https://davidosh96.github.io/index.html)
 
-## Model Preview (the version I wish to be assessed can be found in my Assessment_1 repository)
-The code used to display/embed the model on this page was adapted from code found [here](https://websemantics.uk/articles/displaying-code-in-web-pages/).
+## Model Preview
+The code used to display/embed the model on this page was adapted from code found [here](https://websemantics.uk/articles/displaying-code-in-web-pages/). The version of the model I wish to be assessed can be found in my Assessment_1 repository.
 
 <figure>
   <figcaption>The model:</figcaption>
