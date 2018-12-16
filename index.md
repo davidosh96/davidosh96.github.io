@@ -3,7 +3,7 @@ title: Programming for Geographic Information Analysts - Project Homepage
 ---
 
 ## Hello World... 
-Welcome to my project homepage for the first assessment in the Programming for Geographic Analysts - Core Skills module. This web portfolio was created to present my first finished program since beginning to learn programming. In the future I may keep this page updated with my other work.  
+Welcome to my project homepage for the first assessment in the Programming for Geographic Analysts - Core Skills module. This web portfolio was created to present my first finished program since beginning to learn programming with Python. In the future I may keep this page updated with my other work.  
 
 ### Bio
 My name is David O'Shaughnessy, I am currently studying towards an MSc in Geographic Information Systems at the University of Leeds. I am primarily interested in the study and application of Geographic Information Systems in environmental contexts.
