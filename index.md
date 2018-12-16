@@ -24,7 +24,7 @@ The aim of this project was to begin learning the Python programming language an
 
 <body>
 
-<a href="https://imgur.com/RaWr7AM"><img src="https://i.imgur.com/RaWr7AM.gif" title="source: imgur.com" /></a>
+<a href="https://imgur.com/2AhYPur"><img src="https://i.imgur.com/2AhYPur.gif" title="source: imgur.com" /></a>
 
 </body>
 
