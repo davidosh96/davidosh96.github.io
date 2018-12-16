@@ -18,7 +18,7 @@ The aim of this project was to begin learning the Python programming language an
 
 <head>
 
-<title>Example of the program working:</title>
+<title> Example of the animated model: </title>
 
 </head>
 
