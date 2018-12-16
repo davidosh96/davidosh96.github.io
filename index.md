@@ -31,4 +31,4 @@ Example of the animated model:
 
 </html>
 
-The code used to embed this image was adapted from [this html tutorial](https://gist.github.com/lucashorton/1708983) and [this page.](https://www.quora.com/How-do-I-add-a-GIF-image-using-HTML-code)
+The code used to embed this image was adapted from [this GitHub html tutorial](https://gist.github.com/lucashorton/1708983) and [this page.](https://www.quora.com/How-do-I-add-a-GIF-image-using-HTML-code)
