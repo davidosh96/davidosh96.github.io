@@ -14,6 +14,8 @@ The aim of this project was to begin learning the Python programming language an
 [**Click here to view the project and model code**](https://davidosh96.github.io/projectlinks.html)
 
 
+Example of the animated model:
+
 <html>
 
 <head>
