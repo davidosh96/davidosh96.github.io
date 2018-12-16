@@ -5,8 +5,7 @@ title: Assessment 1 - Model preview
 
 ## Model Preview
 The code used to display/embed the model on this page was adapted from code found [here](https://websemantics.uk/articles/displaying-code-in-web-pages/).
-#The following code below is altered from that at
-#https://websemantics.uk/articles/displaying-code-in-web-pages/
+
 <figure>
   <figcaption>The model:</figcaption>
   <pre>
