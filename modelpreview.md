@@ -79,7 +79,7 @@ def update(frame_number):
     
 #setting the stopping conditions for the animation:   
   
-#This stopping condition which will stop the animation if any agent
+#This stopping condition will stop the animation if any agent
     #is generated a random.random value of less than 0.01 in the agent framework.
     #random.random generates values between 0 and 1.    
     if random.random() < 0.01:
