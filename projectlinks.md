@@ -17,7 +17,7 @@ The repo contains four files:
 
 
 
-Alternatively, view an editable [**online version**](https://davidosh96.github.io/modelpreview.html) of the code embedded on this site (with most comments removed), before downloading the finished version.
+Alternatively, view an editable [**online version**](https://davidosh96.github.io/modelpreview.html) of the code embedded on this site (a more simple version with most comments removed, not my final model), before downloading the finished version.
 
 
 [**Click here**](https://github.com/davidosh96/davidosh96.github.io) to view the repo for this website.
