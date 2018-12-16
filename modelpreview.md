@@ -72,7 +72,8 @@ def update(frame_number):
     matplotlib.pyplot.ylim(300, 0)
     matplotlib.pyplot.imshow(environment)
     for i in range(num_of_agents):
-        matplotlib.pyplot.scatter(agents[i]._x,agents[i]._y)
+        matplotlib.pyplot.scatter(agents[i]._x,agents[i]._y, color='white')
+        matplotlib.pyplot.scatter(agents[25]._x,agents[25]._y, color='black')
     #print(agents[i]._x, agents[i]._y)
     
     
