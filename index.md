@@ -15,7 +15,6 @@ The aim of this project was to begin learning the Python programming language an
 
 
 Example of the animated model:
-
 <html>
 
 <head>
