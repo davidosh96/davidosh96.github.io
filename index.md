@@ -9,7 +9,7 @@ Welcome to my project homepage for the first assessment in the Programming for G
 My name is David O'Shaughnessy, I am currently studying towards an MSc in Geographic Information Systems at the University of Leeds. I am primarily interested in the study and application of Geographic Information Systems in environmental contexts.
 
 ### The Project
-The aim of this project was to begin learning the Python programming language and use this to create an agent-based model which displays environmental data and shows a number of agents (i.e sheep) moving through the environment and "eating" the data.
+The aim of this project was to begin learning the Python programming language and use this to create an agent-based model which displays environmental data and shows a number of agents (i.e sheep) moving through the environment and "eating" the data. An example of this can be seen below.
   
 [**Click here to view the project and model code**](https://davidosh96.github.io/projectlinks.html)
 
